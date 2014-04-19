@@ -1,0 +1,17 @@
+extends layout
+
+block additional_js
+    script(src='/javascripts/jquery.vmap.js')
+    script(src='/javascripts/maps/jquery.vmap.usa.js')
+    script(src='/javascripts/maps/jquery.vmap.canada.js')
+    script(src='javascripts/home.js')
+
+
+block additional_css
+    link(rel='stylesheet', href='/stylesheets/jqvmap.css')
+
+
+block content
+  h1= title
+  p Welcome to #{title}
+  #map-div
